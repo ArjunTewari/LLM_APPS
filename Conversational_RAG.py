@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(model="gpt-3.5-turbo-0125")
 
 from langchain_community.document_loaders import TextLoader
-text = TextLoader("data/be-good.txt").load()
+text = TextLoader("path_to_file").load()
 
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
